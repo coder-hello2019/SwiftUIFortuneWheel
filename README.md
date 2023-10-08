@@ -9,8 +9,16 @@ To install this package, import `https://github.com/coder-hello2019/SwiftUIFortu
 ## Usage
 
 ```swift
+import SwiftUI
+import SwiftUIFortuneWheel
 
-
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            SwiftUIFortuneWheel()
+        }
+    }
+}
 ```
 
 ## License
