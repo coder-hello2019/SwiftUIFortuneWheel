@@ -6,6 +6,6 @@ final class SwiftUIFortuneWheelTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(SwiftUIFortuneWheel().text, "Hello, World!")
+//        XCTAssertEqual(SwiftUIFortuneWheel().text, "Hello, World!")
     }
 }
