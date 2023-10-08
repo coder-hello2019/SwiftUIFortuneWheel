@@ -18,7 +18,10 @@ struct MarkerView: View {
     
     func marketHeight(text: String) -> CGFloat {
         // NB SPM requires that NSFont rather than UIFont is used becase MacOS required
-        let textWidth = text.size(withAttributes: [.font: NSFont.systemFont(ofSize: 11)]).width
+        let textWidth = text.size(withAttributes: [.font: UIFont.systemFont(ofSize: 11)]).width
+        print("textWidth for \(text): \(textWidth)")
+        return textWidth
+        
         print("textWidth for \(text): \(textWidth)")
         return textWidth
     }
