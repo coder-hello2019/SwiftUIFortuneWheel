@@ -100,9 +100,6 @@ struct ArcWheelView: View {
 
                             }
                             .rotationEffect(Angle(degrees: rotationAngle))
-                            .onTapGesture {gesture in
-                                print("gesture x: \(gesture.x), gesture y: \(gesture.y)")
-                            }
                         }
                         
                         // TODO: delete - this is just to help with creating the circle visually
@@ -249,10 +246,6 @@ struct ArcWheelView: View {
     func textWidth(text: String) -> CGFloat {
         // NB UIFont changed to NSFont here as SPM requires MacOS
         let textWidth = text.size(withAttributes: [.font: UIFont.systemFont(ofSize: 11)]).width
-        print("textWidth for \(text): \(textWidth)")
-        return textWidth
-
-//        let textWidth = text.size(withAttributes: [.font: NSFont.systemFont(ofSize: 11)]).width
         print("textWidth for \(text): \(textWidth)")
         return textWidth
     }
